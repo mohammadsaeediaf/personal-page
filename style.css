@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(font/Poppins-Regular.ttf);
+}
+body {
+  font-family: "Poppins";
+  background-color: aliceblue;
+}
+
+nav {
+  padding: 0 20px;
+  display: flex;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  width: 70%;
+  direction: rtl;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  cursor: pointer;
+  margin: 0 50px;
+  direction: rtl;
+}
+
+nav ul li:hover {
+  color: #40e0d0;
+}
+
+/* ****End Nav**** */
