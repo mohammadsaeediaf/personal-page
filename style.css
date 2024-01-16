@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(font/Poppins-Regular.ttf);
+}
+body {
+  font-family: "Poppins";
+  background-color: aliceblue;
+}
+
+nav {
+  padding: 0 20px;
+  display: flex;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  width: 70%;
+  direction: rtl;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  cursor: pointer;
+  margin: 0 50px;
+  direction: rtl;
+}
+
+nav ul li:hover {
+  color: #40e0d0;
+}
+
+main {
+  margin-top: 5px;
+  display: flex;
+}
+
+.main-paragraph {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph-div {
+  padding: 50px;
+}
+
+.paragraph-div h1 {
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.paragraph-div p {
+  font-size: 17px;
+}
+
+.paragraph-div span {
+  color: #ffb234;
+  position: relative;
+}
+
+.paragraph-div span::before {
+  content: "";
+  position: absolute;
+  width: 5em;
+  height: 1.5em;
+  background: aliceblue;
+  animation: text 5s ease-out infinite;
+  transform: translate(0%);
+}
+
+@keyframes text {
+  from {
+    transform: translate(0%);
+  }
+
+  to {
+    transform: translate(120%);
+  }
+}
+
+.paragraph-div input {
+  padding: 15px;
+  width: 10em;
+  font-size: 17px;
+  background: #333;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.main-pic {
+  width: 30%;
+  position: relative;
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 500px;
+}
+
+.main-pic .shape {
+  width: 400px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(0 0 10px #ffc234);
+}
+
+.main-pic:hover .shape {
+  margin-top: 0;
+}
+
+.main-pic .girl {
+  position: absolute;
+  left: 20px;
+  top: -40px;
+  width: 23em;
+  transition: all 0.5s ease-out;
+}
+
+.main-pic:hover .girl {
+  left: 40px;
+}
