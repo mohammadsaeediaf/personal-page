@@ -1,1 +1,2 @@
-This Page is build for personal template
+This Page is build for personal template...
+you can use it on your projects!
